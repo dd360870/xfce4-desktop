@@ -23,6 +23,7 @@ WEBSOCKETIFY_VERSION=0.10.0
 package_list="
     tigervnc-standalone-server \
     tigervnc-common \
+    tigervnc-xorg-extension \
     xfce4 \
     xfce4-session \
     dbus-x11 \
@@ -239,7 +240,7 @@ LOG=/tmp/container-init.log
 
 export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-"autolaunch:"}"
 export DISPLAY="${DISPLAY:-:1}"
-export VNC_RESOLUTION="${VNC_RESOLUTION:-1440x768x16}" 
+export VNC_RESOLUTION="${VNC_RESOLUTION:-1440x768x24}" 
 export LANG="${LANG:-"en_US.UTF-8"}"
 export LANGUAGE="${LANGUAGE:-"en_US.UTF-8"}"
 
